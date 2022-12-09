@@ -8,7 +8,10 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Added a flexbox so the text stays in its row */
 .header {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -76,8 +79,9 @@ p {
     margin-left: 20px;
 }
 
+/* set margin variable to auto so it auto fits the margin */
 .benefits {
-    margin-right: 20px;
+    margin-right: auto;
     padding: 20px;
     clear: both;
     float: right;
@@ -211,4 +215,52 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    /* Set different header height for flex*/
+    .header {
+        height: 160px;
+    }
+    /*Aligns text to the right so they don't interfere with the title and has them stack vertically as the flex*/
+    .header div ul {
+        text-align: right;
+        flex-direction: row;
+    }
+
+   /* Put a smaller font size for smaller screens */
+    .benefit-lead h3 {
+        font-size: 15px;
+    }
+    .benefit-brand h3 {
+        font-size: 15px;
+    }
+    .benefit-cost h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .benefit-lead img {
+        display: none;
+    }
+    .benefit-brand img {
+        display: none;
+    }
+    .benefit-cost img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .search-engine-optimization img {
+        display: none;
+    }
+    .online-reputation-management img {
+        display: none;
+    }
+    .social-media-marketing img {
+        display: none;
+    }
 }
