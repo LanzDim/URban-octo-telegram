@@ -241,18 +241,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    .benefit-lead img {
-        display: none;
-    }
-    .benefit-brand img {
-        display: none;
-    }
-    .benefit-cost img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
 
     .search-engine-optimization img {
         display: none;
@@ -261,6 +249,18 @@ p {
         display: none;
     }
     .social-media-marketing img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .benefit-lead img {
+        display: none;
+    }
+    .benefit-brand img {
+        display: none;
+    }
+    .benefit-cost img {
         display: none;
     }
 }
